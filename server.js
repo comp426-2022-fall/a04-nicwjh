@@ -29,7 +29,7 @@ app.post('/app/roll/', (req, res) => {
 
 // req #6
 app.get('/app/roll/:sides/', (req, res) => {
-	var sides = parseInt(req.params.side);
+	var sides = parseInt(req.params.sides);
 	res.send(roll(sides, 2, 1));
 });
 
