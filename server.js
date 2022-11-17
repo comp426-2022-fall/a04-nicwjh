@@ -48,4 +48,9 @@ app.get('/app/roll/:sides/:dice/:rolls/', (req, res) => {
 	res.send(roll(sides, dice, rolls));
 });
 
+// default EP 
+app.use(function(req, res) {
+	res.send("404 not found");
+});
 
+app.listen(port);
